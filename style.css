@@ -69,14 +69,17 @@ body {
 }
 @media (max-width: 600px) {
   .container {
-    max-width: 400px;
+    max-width: 350px;
+    margin: 0 auto;
   }
   .convert-input {
-    width: 200px;
+    width: 180px;
     max-height: 40px;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
   }
   .convert-btn {
+    width: 90px;
+    font-size: 1rem;
     max-height: 40px;
   }
   .convert-rslt {
