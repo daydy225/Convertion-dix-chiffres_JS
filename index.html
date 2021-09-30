@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Passage a Dix chiffre</title>
+    <title>Passage a 10 chiffres</title>
   </head>
   <body>
     <div class="container">
       <h2 class="convert__titre">
-        Numeros Orange, MTN, MOOV de 8 a 10 chiffres
+        Numeros ORANGE, MTN, MOOV de 8 a 10 chiffres
+        <p class="convert__soustitre">
+          ORANGE {07...09} MTN {04..06} MOOV {01...03}
+        </p>
       </h2>
       <div class="convert-block">
         <input
@@ -18,13 +21,20 @@
           name="convert"
           id="convert"
           placeholder="Entrez un numero a 8 chiffres"
+          maxlength="8"
           class="convert-input"
         />
-        <button type="button" id="convert-btn" class="convert-btn">
+        <button
+          type="button"
+          id="convert-btn"
+          class="convert-btn"
+          onclick="convertir()"
+        >
           Convertir
         </button>
       </div>
-      <p id="convert-result" class="convert-rslt"></p>
+      <p id="result" class="convert-rslt"></p>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
